@@ -11,4 +11,7 @@
 4. creating /notes
 
 5. create notes.json file
+
    1. create mock databse
+
+6. creating post route to add note to databse
