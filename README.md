@@ -15,3 +15,6 @@
    1. create mock databse
 
 6. creating post route to add note to databse
+
+7. getting data of single note
+   1. npm install uuid
