@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const router = express.Router();
 
-const notes = [];
+let notes = [];
 
 // all routes are starting with /notes
 router.get('/', (req, res) => {
@@ -25,6 +25,14 @@ router.get('/:id', (req, res) => {
 
   const foundNote = notes.find((note) => note.id === id);
   res.send(foundNote);
+});
+
+// deleting a note
+router.delete('/:id', (req, res) => {
+  const { id } = req.params;
+
+  notes = notes.filter((note) => note.id !== id);
+  res.send(`Note with id ${id} deleted from the database.`);
 });
 
 export default router;

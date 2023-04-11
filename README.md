@@ -17,4 +17,7 @@
 6. creating post route to add note to databse
 
 7. getting data of single note
+
    1. npm install uuid
+
+8. creating delete route
