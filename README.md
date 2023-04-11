@@ -9,3 +9,6 @@
    1. npm i --save-dev nodemon
 
 4. creating /notes
+
+5. create notes.json file
+   1. create mock databse
