@@ -5,4 +5,7 @@
 2. npm install --save express
 
 3. creating index.js
+
    1. npm i --save-dev nodemon
+
+4. creating /notes
