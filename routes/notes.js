@@ -35,4 +35,19 @@ router.delete('/:id', (req, res) => {
   res.send(`Note with id ${id} deleted from the database.`);
 });
 
+//updating a note
+router.put('/:id', (req, res) => {
+  const { id } = req.params;
+
+  const { name, note } = req.body;
+
+  const notee = notes.find((note) => note.id === id);
+
+  if (name) notee.name = name;
+
+  if (note) notee.note = note;
+
+  res.send(`Note with id ${id} updated in the database.`);
+});
+
 export default router;
